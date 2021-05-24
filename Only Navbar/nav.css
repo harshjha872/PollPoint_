@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  background-color: black;
+}
+.header {
+  position: fixed;
+  height: 79px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #111111;
+  align-items: center;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.25);
+  z-index: 10000;
+}
+.PollPoint {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 1.85rem;
+  font-weight: 900;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.nav__links {
+  display: flex;
+  height: inherit;
+  width: 40%;
+  align-items: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: 89px;
+  padding: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 700;
+  margin-left: 15px;
+  margin-right: 15px;
+  transform: translateY(1px);
+  border-bottom: 3px solid transparent;
+}
+.nav__link:hover {
+  border-bottom: 3px solid #ff4655;
+  text-decoration: none;
+}
+
+.nav__link a {
+  transform: translateY(2px);
+  text-decoration: none;
+  color: white;
+}
+.login--btn {
+  margin-left: 399px;
+}
+.login__signup {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  height: 40px;
+  width: 127px;
+  background-color: #ff4655;
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 30px;
+  border-radius: 3px;
+  transition: all 300ms;
+}
+.login__signup:hover {
+  background-color: #111111;
+}
+.headerSpace {
+  height: 79px;
+  width: 100%;
+}

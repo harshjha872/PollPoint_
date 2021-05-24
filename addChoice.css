@@ -78,75 +78,7 @@ body {
   border-radius: 3px;
   transition: all 300ms;
 }
-.mainImage {
-  width: 100%;
-  height: 100vh;
-}
-.img {
-  height: 100vh;
-  width: 100%;
-  transition: all 1s;
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.img__hidden {
-  opacity: 0;
-}
-.imagesss {
-  position: inherit;
-  background-position: top right;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: all 1s;
-  opacity: 0.5;
-}
 
-.left {
-  position: absolute;
-  top: 43%;
-  z-index: 3;
-}
-.right {
-  position: absolute;
-  top: 43%;
-  left: 97%;
-}
-.btn__style {
-  font-weight: 900;
-  border: none;
-  background: transparent;
-  color: white;
-  font-size: 4rem;
-}
-
-.pollpoint__main {
-  position: absolute;
-  top: 36%;
-  left: 29%;
-  font-size: 8rem;
-  color: white;
-  font-family: "Architects Daughter", sans-serif;
-}
-.subhead {
-  position: absolute;
-  top: 33%;
-  left: 38%;
-  font-size: 1.4rem;
-  color: white;
-}
-.voteNow__btn {
-  position: absolute;
-  top: 59%;
-  left: 47%;
-  transition: all 300ms;
-  border-radius: 23px;
-}
 .login__signup:hover {
   background-color: #111111;
 }
@@ -167,30 +99,35 @@ section h1 {
   color: white;
   font-size: 3rem;
 }
-#textarea1 {
-  resize: none;
+.input__email {
+  text-decoration: none;
+  border: none;
+  height: 70px;
+  width: 150px;
+}
+.placeholders {
   outline: none;
   border: none;
   color: rgb(0, 0, 0);
   height: 45px;
   width: 430px;
   border-radius: 1px;
-  background: rgba(255, 255, 255, 0.575);
+  background: rgba(255, 255, 255, 0.753);
   padding: 5px 5px;
-  height: 130px;
-  padding-left: 22px;
-  padding-top: 14px;
-  padding-right: 22px;
+  padding-left: 23px;
+  padding-top: 7px;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+.placeholders::placeholder {
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+.bothcontainer {
   border-bottom: 2px solid rgb(255, 255, 255);
-  margin-bottom: 50px;
+  z-index: 1;
 }
-#textarea1::placeholder {
-  color: black;
-}
-.buttons_container {
-  display: flex;
-}
-.edit__btns {
-  margin-left: 10px;
-  margin-right: 10px;
+.submit__btn {
+  margin-top: 30px;
+  margin-right: 0px;
 }
