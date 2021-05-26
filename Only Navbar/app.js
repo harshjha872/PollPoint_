@@ -44,8 +44,8 @@ const Pre = function () {
 
 setInterval(nxt, 4000)
 
-btnRight.addEventListener('click', nxt)
-btnLeft.addEventListener('click', Pre)
+// btnRight.addEventListener('click', nxt)
+// btnLeft.addEventListener('click', Pre)
 
 // sections.forEach(function (El) {
 
