@@ -64,6 +64,23 @@ const Observer = new IntersectionObserver(function (entries, Observer) {
 sections.forEach((El) => {
     Observer.observe(El);
 });
+const hamburger = document.querySelector('.hamburger');
+const displayOptions = document.querySelector('.btns--header');
+hamburger.addEventListener('click', () => {
+    if (displayOptions.style.display == 'none')
+        displayOptions.style.display = 'block';
+    else
+        displayOptions.style.display = 'none'
+})
+setInterval(() => {
+    if (getComputedStyle(hamburger).display == 'none') {
+        console.log('fefef');
+        displayOptions.style.display = 'block';
+    }
+    else {
+        console.log('not');
+    }
+}, 1000)
 // setInterval(function () {
 //     document.querySelector('.pollpoint__main').style.color = `rgb(${random2()}, ${random2()}, ${random2()})`
 // }, 80)
